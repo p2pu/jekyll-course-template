@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<img src="{{ page.course.image }}">
+
+<h1>{{ page.course.title }}</h1>
+<ul>
+{% for subpage in page.course.pages %}
+  <li> <a href="{{ subpage.url }}">{{subpage.title}}</a></li>
+{% endfor %}
+</ul>
+
+<h2>About</h2>
+{{ content }}
+
+<h2>Organizers</h2>
+<ul>
+{% for user in page.course.organizers %}
+  <li><a href="{{ user.url }}">{{user.username}}</a></li>
+{% endfor %}
+</ul>

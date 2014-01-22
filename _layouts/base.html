@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+  <meta charset="utf-8">
+  <!--[if IE]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+
+  <title>P2PU | {{ post.title }}</title>
+  <meta name="description" content="Learning for everyone, by everyone, about almost anything.">
+  <meta name="author" content="p2pu">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://p2pu.org/static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="https://p2pu.org/static/images/apple-touch-icon.png">
+
+  <!-- Arvo font from google font api -->
+  <link href='https://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
+  <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://p2pu.org/static/css/jcarousel/tango/skin.css">
+  <link rel="stylesheet" href="https://www.google.com/cse/style/look/default.css" type="text/css" />
+
+  <link rel="stylesheet" href="https://p2pu.org/static/css/overrides.css">
+  <script src="https://p2pu.org/static/js/libs/jquery-1.8.2.min.js"></script>
+  <script src="https://p2pu.org/static/js/bootstrap.min.js"></script>
+  <script src="https://p2pu.org/static/js/trunk8.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="https://p2pu.org/static/css/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" href="https://p2pu.org/static/js/libs/jquery.ui.spinner/ui.spinner.css">
+  <script src="https://p2pu.org/static/js/libs/modernizr-1.6.min.js"></script>
+</head>
+<body {% if page.itemtype %}itemtype="{{page.itemtype}}"{% endif %}>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="https://p2pu.org">
+        <img src="https://p2pu.org/static/images/logo.png" />
+      </a>
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="left-link">
+            <a href="">{{ _('Find') }}</a>
+            <div class="navbar-custom-header-text">{{ _('Great Courses') }}</div>
+          </li>
+          <li class="divider-vertical"></li>
+          <li class="left-link">
+          </li>
+        </ul>
+        <div class="navbar-search nav-google-search">
+            <span id="cse-search-form" class="" action>
+              <!-- This will apply the updated styles to the search -->
+              <!-- bar. Google doesn't let you white label the box.  -->
+              <!-- <input type="text" class="search-query" placeholder="web design" /> -->
+              <!-- <i class="icon-search"></i> -->
+            </span>
+        </div>
+
+            <ul class="nav pull-right right-links">
+              <li ><a class="right-link-1" href="http://info.p2pu.org/about" target="_blank">{{ _('About') }}</a></li>
+              <li ><a class="right-link-2" href="http://info.p2pu.org" target="_blank">{{ _('Blog') }}</a></li>
+              <li><a class="right-link-2" href="http://help.p2pu.org" id="help-link" target="_blank">{{ _('Help') }}</a></li>
+              <li class="divider-vertical right-divider"></li>
+              <li><a class="right-link-3" href="{{ login_with_redirect_url }}">{{ _('Login') }}</a></li>
+            </ul>	
+
+      </div> 
+
+
+    </div>
+  </div>
+</div>
+
+<div class="container breadcrumb-box">
+  <div class="row-fluid">
+	<div class="span12">
+      <ul class="breadcrumb"> 
+        <li><a href="learn_default">{{ _('Home') }}</a></li>
+        <span id="breadcrumbs-actions" class="pull-right">
+        </span>
+      </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container body">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+
+
+  <script src="https://p2pu.org/static/js/libs/jquery-ui-1.9.1.custom.min.js"></script>
+  <script src="https://p2pu.org/static/js/libs/jquery.tmpl.min.js"></script>
+  <script src="https://p2pu.org/static/js/libs/jquery.ajaxupload.js"></script>
+  <script src="https://p2pu.org/static/js/libs/history.js/scripts/bundled/html5/jquery.history.js"></script>
+  <script src="https://p2pu.org/static/js/libs/jquery.jcarousel.min.js"></script>
+  <script src="https://p2pu.org/static/js/libs/jquery.ui.spinner/ui.spinner.min.js"></script>
+  <script src="https://p2pu.org/static/js/libs/prettify/prettify.js"></script>
+  <script src="https://p2pu.org/static/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <script src="https://p2pu.org/static/js/libs/ASCIIMathML.js"></script>
+
+  <script src="https://p2pu.org/static/js/plugins.js"></script>
+  <script type="text/javascript" src="https://p2pu.org/static/js/libs/farbtastic/src/farbtastic.js"></script>
+  <script src="https://p2pu.org/static/js/libs/{{ _('jquery.ui.datepicker-en.js') }}"></script>
+  <script src="https://p2pu.org/static/js/script.js"></script>
+  <script src="https://p2pu.org/static/{{ _('js/script-en.js') }}"></script>
+  
+
+  <!-- Google Analytics -->
+  {% include ga.html %}
+
+</body>
+</html>
