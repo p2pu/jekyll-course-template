@@ -2,12 +2,12 @@
 layout: base
 ---
 
-<img src="{{ page.course.image }}">
+<img src="{{site.baseurl}}{{ page.course.image }}">
 
 <h1>{{ page.course.title }}</h1>
 <ul>
 {% for subpage in page.course.pages %}
-  <li> <a href="{{ subpage.url }}">{{subpage.title}}</a></li>
+  <li> <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
 {% endfor %}
 </ul>
 
