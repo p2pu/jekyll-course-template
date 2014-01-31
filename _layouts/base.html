@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <!--[if IE]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
 
-  <title>P2PU | {{ page.title }}</title>
+  <title>{{site.data.course.title}} | {{ page.title }}</title>
   <meta name="description" content="Learning for everyone, by everyone, about almost anything.">
   <meta name="author" content="p2pu">
 
@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Arvo:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://p2pu.org/static/css/overrides.css">
-  <link rel="stylesheet" href="{{baseurl}}/css/site.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/css/site.css">
   <script src="https://p2pu.org/static/js/libs/jquery-1.8.2.min.js"></script>
   <script src="https://p2pu.org/static/js/bootstrap.min.js"></script>
   
@@ -32,7 +32,7 @@
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="/{{baseurl}}">{{site.data.course.title}}</a>
+        <a class="brand" href="{{site.baseurl}}/">{{site.data.course.title}}</a>
       </div>
     </div>
   </div>
