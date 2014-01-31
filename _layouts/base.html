@@ -29,53 +29,19 @@
 </head>
 <body {% if page.itemtype %}itemscope itemtype="{{page.itemtype}}"{% endif %}>
 
-<div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="https://p2pu.org">
-        <img src="https://p2pu.org/static/images/logo.png" />
-      </a>
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <div class="nav-collapse collapse">
-            <ul class="nav pull-right right-links">
-              <li ><a class="right-link-1" href="http://info.p2pu.org/about" target="_blank">{{ _('About') }}</a></li>
-              <li ><a class="right-link-2" href="http://info.p2pu.org" target="_blank">{{ _('Blog') }}</a></li>
-              <li><a class="right-link-2" href="http://help.p2pu.org" id="help-link" target="_blank">{{ _('Help') }}</a></li>
-              <li class="divider-vertical right-divider"></li>
-              <li><a class="right-link-3" href="{{ login_with_redirect_url }}">{{ _('Login') }}</a></li>
-            </ul>	
-      </div> 
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/{{baseurl}}">{{site.data.course.title}}</a>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="container breadcrumb-box">
-  <div class="row-fluid">
-	<div class="span12">
-      <ul class="breadcrumb"> 
-        <li><a href="learn_default">{{ _('Home') }}</a></li>
-        <span id="breadcrumbs-actions" class="pull-right">
-        </span>
-      </ul>
-	</div>
+  <div class="container body">
+    {{ content }}
   </div>
-</div>
 
-
-    <div class="container body">
-      {{ content }}
-    </div>
-
-    {% include footer.html %}
+  {% include footer.html %}
 
   <!-- Google Analytics -->
   {% include ga.html %}
