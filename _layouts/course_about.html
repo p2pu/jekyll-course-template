@@ -1,10 +1,11 @@
 ---
 layout: base
+itemtype: http://schema.org/WebPage
 ---
 
+<h1>{{ page.course.title }}</h1>
 <img src="{{site.baseurl}}{{ page.course.image }}">
 
-<h1>{{ page.course.title }}</h1>
 <ul>
 {% for subpage in page.course.pages %}
   <li> <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
@@ -15,8 +16,8 @@ layout: base
 {{ content }}
 
 <h2>Organizers</h2>
-<ul>
+<ul class="thumbnails">
 {% for user in page.course.organizers %}
-  <li><a href="{{ user.url }}">{{user.username}}</a></li>
+  <li class="span2"><a href="{{ user.url }}"><img class="usr-image thumbnail" src="{{ user.image }}" alt="{{ user.name }}"</a></li>
 {% endfor %}
 </ul>

@@ -1,3 +1,5 @@
 encoding: utf-8
 markdown: redcarpet
 baseurl: /course-2-jekyll
+ga_tracking_code: 
+url: p2pu.github.io/course-2-jekyll/
