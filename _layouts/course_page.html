@@ -2,18 +2,15 @@
 layout: base
 ---
 
-<h1><a href="{{site.baseurl}}{{ page.course.url }}">{{page.course.title}}</a></h1>
-
 <div class="row">
   <div class="sidebar span4">
-    <img src="{{site.baseurl}}{{page.course.image}}">
+    <img src="{{site.baseurl}}{{site.data.course.image}}">
     <ul class="nav nav-list">
     {% for subpage in site.categories.content reversed %}
       <li class="{% if subpage.title == page.title %}active{% endif %}" > <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
     {% endfor %}
     </ul>
   </div>
-
 
   <div class="content span8">
     {{ content }}
