@@ -4,20 +4,27 @@ itemtype: http://schema.org/WebPage
 ---
 
 <h1>{{ page.course.title }}</h1>
-<img src="{{site.baseurl}}{{ page.course.image }}">
 
-<ul>
-{% for subpage in page.course.pages %}
-  <li> <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
-{% endfor %}
-</ul>
+<div class="row">
+  <div class="sidebar span4">
+    <img src="{{site.baseurl}}{{ page.course.image }}">
+ 
+    <ul class="nav nav-list">
+    {% for subpage in page.course.pages %}
+      <li> <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
 
-<h2>About</h2>
-{{ content }}
-
-<h2>Organizers</h2>
-<ul class="thumbnails">
-{% for user in page.course.organizers %}
-  <li class="span2"><a href="{{ user.url }}"><img class="usr-image thumbnail" src="{{ user.image }}" alt="{{ user.name }}"</a></li>
-{% endfor %}
-</ul>
+  <div class="content span8">
+    <h2>About</h2>
+    {{ content }}
+ 
+    <h2>Organizers</h2>
+    <ul class="thumbnails">
+    {% for user in page.course.organizers %}
+      <li class="span2"><a href="{{ user.url }}"><img class="usr-image thumbnail" src="{{ user.image }}" alt="{{ user.name }}"></a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
