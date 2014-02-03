@@ -44,6 +44,8 @@
   {% include footer.html %}
 
   <!-- Google Analytics -->
-  {% include ga.html %}
+  {% if site.ga_tracking_code %}
+    {% include ga.html %}
+  {% endif %}
 </body>
 </html>
