@@ -12,5 +12,6 @@ A Jekyll template for running an open online course (no, not a MOOC)
  - Remeber file names need to start with a date and that this date will determine the order. 
  - Also remember to add the category 'contents' to the post, otherwise it won't show up on your course about page
 - Update _config.yml
- - You may want to create a new Google Analytics account and put the site ID in the _config.yml file
+ - Create a new Google Analytics account and put the site ID in _config.yml
+ - Create a new disqus account if you want to enable comments and put the disqus_shortname in _config.yml
 - Push to the gh-pages branch of your github reposity
