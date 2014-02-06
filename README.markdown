@@ -32,11 +32,11 @@ See http://p2pu.github.io/jekyll-course-template for an example of what it looks
 
 ## Do you wish to contribute?
 
-If you would like to contribute, there are lots that needs to be done. Just branch the repository and get hacking!
+If you would like to contribute, there are lots that needs to be done. Fork the repository and get hacking!
 
 - Add [LRMI metadata](http://www.lrmi.net) to the template.
 - Pull in the external CSS and JS files we are currently using.
-- Figure out how we can easily support signups - something like Google forms where we can show the results in the document as profile pictures.
+- Figure out how we can support signups - something like Google forms where we can show the results in the document as profile pictures.
 
 ## Have comment and suggestions?
 
