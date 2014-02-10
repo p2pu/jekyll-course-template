@@ -37,6 +37,8 @@ If you would like to contribute, there are lots that needs to be done. Fork the 
 - Add [LRMI metadata](http://www.lrmi.net) to the template.
 - Pull in the external CSS and JS files we are currently using.
 - Figure out how we can support signups - something like Google forms where we can show the results in the document as profile pictures.
+- Add support for badges
+- Figure out how to do translation
 
 ## Have comment and suggestions?
 
