@@ -1,0 +1,135 @@
+/* Icon */
+
+.icon {
+	position: relative;
+	&:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+	}
+	&.circle {
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border: 0;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 1.25em;
+		height: 2.25em;
+		left: 0;
+		line-height: 2.25em;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		width: 2.25em;
+		&:hover {
+			top: -0.2em;
+		}
+		&.fa-twitter {
+			background: #70aecd;
+			color: white;
+			&:hover {
+				background: #7fb7d2;
+			}
+		}
+		&.fa-facebook {
+			background: #7490c3;
+			color: white;
+			&:hover {
+				background: #829bc9;
+			}
+		}
+		&.fa-google-plus {
+			background: #db6b67;
+			color: white;
+			&:hover {
+				background: #df7b77;
+			}
+		}
+		&.fa-github {
+			background: #dcad8b;
+			color: white;
+			&:hover {
+				background: #e1b89b;
+			}
+		}
+		&.fa-dribbble {
+			background: #da83ae;
+			color: white;
+			&:hover {
+				background: #df93b8;
+			}
+		}
+	}
+	&.feature {
+		cursor: default;
+		display: block;
+		margin: 0 0 1.5em 0;
+		opacity: 0.35;
+		text-align: center;
+		&:before {
+			font-size: 5em;
+			line-height: 1em;
+		}
+	}
+	> .label {
+		display: none;
+	}
+}
+
+.feature-icon {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 5em;
+	margin-bottom: 2.75em;
+	cursor: default;
+
+	&:before {
+		content: '';
+		background: $slate;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-left: -0.325em;
+		width: 0.65em;
+		height: 0.65em;
+		display: block;
+		border-radius: 100%;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		bottom: 0.65em;
+		width: 1px;
+		height: 4.35em;
+		background: $slate;
+		margin-left: -0.5px;
+	}
+
+	.fa {
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		font-size: 4.5em;
+		border-radius: 100%;
+		box-shadow: inset 0 0 0 1px $slate;
+		color: #666;
+		line-height: 2.1em;
+	}
+}
+
+
+.featured-icon {
+	padding: 20px;
+	float: left;
+	font-size: 8em;
+	margin: 35px;
+	margin-left: 0;
+}
+

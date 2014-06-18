@@ -1,0 +1,30 @@
+/* Image */
+
+.image {
+	border: 0;
+	position: relative;
+	&:before {
+		background: url("images/overlay.png");
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	&.fit {
+		display: block;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	&.feature {
+		display: block;
+		margin: 0 0 2em 0;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+}

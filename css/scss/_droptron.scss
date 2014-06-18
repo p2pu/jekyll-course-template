@@ -1,0 +1,45 @@
+/* Dropotron */
+
+.dropotron {
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+	line-height: 2.25em;
+	min-width: 13em;
+	padding: 1em 0;
+	text-transform: uppercase;
+	&.level-0 {
+		font-size: 0.7em;
+		font-weight: 400;
+		margin-top: 1.5em;
+		&:before {
+			border-bottom: solid 0.5em #fff;
+			border-left: solid 0.5em transparent;
+			border-right: solid 0.5em transparent;
+			content: '';
+			left: 0.75em;
+			position: absolute;
+			top: -0.45em;
+		}
+	}
+	> li {
+		border-top: solid 1px rgba(124, 128, 129, 0.2);
+		> a {
+			-moz-transition: none;
+			-webkit-transition: none;
+			-o-transition: none;
+			-ms-transition: none;
+			transition: none;
+			color: inherit;
+			text-decoration: none;
+			padding: 0 1em;
+			border: 0;
+		}
+		&:hover > a {
+			background: #83d3c9;
+			color: white;
+		}
+		&:first-child {
+			border-top: 0;
+		}
+	}
+}

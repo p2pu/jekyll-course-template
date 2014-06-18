@@ -1,0 +1,132 @@
+/* Layers */
+
+#topButton .toggle {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	&:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		color: white;
+		content: '\f039';
+		font-size: 0.75em;
+		height: 30px;
+		left: 0;
+		line-height: 30px;
+		opacity: 0.5;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	&:after {
+		background: rgba(163, 169, 170, 0.75);
+		border-radius: 0 0 4px 4px;
+		content: '';
+		height: 30px;
+		left: 50%;
+		margin-left: -40px;
+		position: absolute;
+		top: 0;
+		width: 80px;
+	}
+}
+
+#sideButton .toggle {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	&:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		color: white;
+		content: '\f039';
+		font-size: 1em;
+		height: 40px;
+		left: 10px;
+		line-height: 40px;
+		opacity: 0.5;
+		position: absolute;
+		top: 11px;
+		width: 60px;
+		z-index: 1;
+	}
+	&:after {
+		background: rgba(163, 169, 170, 0.75);
+		border-radius: 2px;
+		content: '';
+		height: 40px;
+		left: 10px;
+		position: absolute;
+		top: 10px;
+		width: 60px;
+	}
+}
+
+#topPanel, #sidePanel {
+	background: #1c2021;
+	color: white;
+	font-size: 0.8em;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+}
+
+#topPanel nav, #sidePanel nav {
+	padding: 0.25em 0.5em 1em 0.5em;
+}
+
+#topPanel .link, #sidePanel .link {
+	border: 0;
+	border-top: solid 1px rgba(255, 255, 255, 0.05);
+	color: inherit;
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	opacity: 0.75;
+	text-decoration: none;
+}
+
+#topPanel .link.depth-0, #sidePanel .link.depth-0 {
+	font-weight: 900;
+}
+
+#topPanel .link:first-child, #sidePanel .link:first-child {
+	border-top: 0;
+}
+
+#topPanel .indent-1, #sidePanel .indent-1 {
+	display: inline-block;
+	width: 1em;
+}
+
+#topPanel .indent-2, #sidePanel .indent-2 {
+	display: inline-block;
+	width: 2em;
+}
+
+#topPanel .indent-3, #sidePanel .indent-3 {
+	display: inline-block;
+	width: 3em;
+}
+
+#topPanel .indent-4, #sidePanel .indent-4 {
+	display: inline-block;
+	width: 4em;
+}
+
+#topPanel .indent-5, #sidePanel .indent-5 {
+	display: inline-block;
+	width: 5em;
+}

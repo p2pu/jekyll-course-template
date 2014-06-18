@@ -1,0 +1,77 @@
+/* Form */
+
+input {
+	&[type="text"], &[type="password"], &[type="email"] {
+		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: none;
+		border: solid 1px rgba(124, 128, 129, 0.2);
+		color: inherit;
+		display: block;
+		padding: 0.75em;
+		text-decoration: none;
+		width: 100%;
+		outline: 0;
+	}
+}
+
+textarea {
+	-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-o-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: none;
+	border: solid 1px rgba(124, 128, 129, 0.2);
+	color: inherit;
+	display: block;
+	padding: 0.75em;
+	text-decoration: none;
+	width: 100%;
+	outline: 0;
+}
+
+input {
+	&[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus {
+		border-color: #83d3c9;
+	}
+}
+
+textarea:focus {
+	border-color: #83d3c9;
+}
+
+input {
+	&[type="text"], &[type="password"], &[type="email"] {
+		line-height: 1em;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: 0.5;
+	position: relative;
+	top: 3px;
+}
+
+:-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+	color: inherit;
+	opacity: 0.5;
+}
+
+.formerize-placeholder {
+	color: rgba(124, 128, 129, 0.5) !important;
+}
