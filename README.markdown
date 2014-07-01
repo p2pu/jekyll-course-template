@@ -39,6 +39,7 @@ If you would like to contribute, there are lots that needs to be done. Fork the 
 - Figure out how we can support signups - something like Google forms where we can show the results in the document as profile pictures.
 - Add support for badges
 - Figure out how to do translation
+- Add metadata for social sharing
 
 ## Have comment and suggestions?
 
