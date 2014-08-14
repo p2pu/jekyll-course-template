@@ -1,0 +1,26 @@
+.horizontal-thumbnail {
+	@extend .thumbnail;
+
+	padding: 1em 1em 1.5em 1em;
+	color: $gray-dark;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid $gray-light;
+
+	img {
+		width: 20%;
+		float: left;
+		margin: 0 1em 1em 0;
+	}
+
+	.title {
+		color: $gray-dark;
+		margin-top: 0;
+	}
+
+	.cotent-wrap {
+		overflow: hidden;
+	}
+
+
+}

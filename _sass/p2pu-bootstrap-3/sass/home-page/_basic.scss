@@ -1,0 +1,41 @@
+body {
+	color: $gray-darker;
+	font-family: 'Open Sans' Helvetica, sans-serif;
+	font-size: 1.5em;
+	line-height: 2;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Arvo', Arial, serif;
+}
+
+.first {
+	padding-left: 0;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.page-content {
+	margin-top: 2em;
+}
+
+.bottom-link {
+	margin: 20px 0;
+
+	a {
+		font-size: 1.2em;
+		font-weight: bold;
+
+		&:before {
+			content: "\f086";
+			font-family: 'FontAwesome';
+			margin-right: 10px;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
