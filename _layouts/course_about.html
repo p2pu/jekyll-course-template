@@ -1,8 +1,15 @@
 ---
 layout: base
 ---
+
+<div class="container">
 <div class="row">
-  <div class="sidebar span4">
+  <div class="col-md-12 col-lg-12">
+    <h1>{{ site.data.course.title}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="sidebar col-md-4">
     <ul class="nav nav-list">
     {% for subpage in site.categories.content reversed %}
       <li> <a href="{{site.baseurl}}{{ subpage.url }}">{{subpage.title}}</a></li>
@@ -10,8 +17,8 @@ layout: base
     </ul>
   </div>
 
-  <div class="content span8">
+  <div class="col-md-8">
     {{ content }}
- 
   </div>
+</div>
 </div>

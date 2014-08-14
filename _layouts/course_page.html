@@ -2,8 +2,9 @@
 layout: base
 ---
 
+<div class="container">
 <div class="row">
-  <div class="sidebar span4">
+  <div class="sidebar col-lg-4">
     <img src="{{site.baseurl}}{{site.data.course.image}}">
     <ul class="nav nav-list">
     {% for subpage in site.categories.content reversed %}
@@ -12,9 +13,9 @@ layout: base
     </ul>
   </div>
 
-  <div class="content span8">
+  <div class="content col-lg-8">
     {{ content }}
   </div>
 
 </div>
-
+</div>
