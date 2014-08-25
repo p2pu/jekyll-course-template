@@ -10,3 +10,6 @@ prose:
   ignore:
     - /_includes
     - /_layouts
+    - /_sass
+    - /fonts
+    - /js
