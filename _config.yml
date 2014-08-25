@@ -23,3 +23,7 @@ prose:
         element: "text"
         label: "Title"
         value: ""
+    - name: "category"
+      field:
+        element: "hidden"
+        value: "content"
