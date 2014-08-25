@@ -6,4 +6,7 @@ permalink: /:title/
 ga_tracking_code: UA-5757664-17
 disqus_shortname: jekyllcoursetemplate
 prose:
-    media: /img
+  media: /img
+  ignore:
+    - /_includes
+    - /_layouts
