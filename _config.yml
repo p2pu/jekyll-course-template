@@ -14,16 +14,17 @@ prose:
     - /fonts
     - /js
   metadata:
-    - name: "layout"
-      field:
-        element: "hidden"
-        value: "course_page"
-    - name: "title"
-      field:
-        element: "text"
-        label: "Title"
-        value: ""
-    - name: "category"
-      field:
-        element: "hidden"
-        value: "content"
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "course_page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "content"
