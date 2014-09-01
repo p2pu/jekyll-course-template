@@ -44,3 +44,7 @@ If you would like to contribute, there are lots that needs to be done. Fork the 
 ## Have comment and suggestions?
 
 Come and tell us all about it at [thepeople.p2pu.org](http://thepeople.p2pu.org).
+
+## License
+
+The template and the code is all released under the MIT license unless otherwise noted. By default the template is set up to publish the content you add under CC-BY-SA.
